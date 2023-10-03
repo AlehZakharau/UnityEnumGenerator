@@ -6,7 +6,7 @@ namespace UnityEditor.Generator
 {
     public static class GeneratorUtility
     {
-        private static List<string> PrepareEnumsForGenerator<T>(string enumType) where T : Enum
+        public static List<string> PrepareEnumsForGenerator<T>(string enumType) where T : Enum
         {
             Array array = Enum.GetValues(typeof(T));
             List<string> newEnumInstances = (from object enumInstance in array select enumInstance.ToString()).ToList();

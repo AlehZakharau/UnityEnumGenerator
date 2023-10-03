@@ -5,9 +5,15 @@
     "description": "this library allows to generate c# enum in editor",
     "unity": "2021.3",
     "unityRelease": "15f1",
+    "documentationUrl": "https://github.com/AlehZakharau/UnityEnumGenerator",
     "author": {
         "name": "AlehZakharau",
         "email": "alehzaharau@tutanota.com",
-        "url": ""
+        "url": "https://github.com/AlehZakharau/UnityEnumGenerator#readme"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlehZakharau/UnityEnumGenerator.git",
+        "directory": "com.zakharau.enumgenerator"
     }
 }

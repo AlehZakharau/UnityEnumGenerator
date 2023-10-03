@@ -1,0 +1,13 @@
+{
+    "name": "com.zakharau.enumgenerator",
+    "version": "0.5.0",
+    "displayName": "UnityEnumGenerator",
+    "description": "this library allows to generate c# enum in editor",
+    "unity": "2021.3",
+    "unityRelease": "15f1",
+    "author": {
+        "name": "AlehZakharau",
+        "email": "alehzaharau@tutanota.com",
+        "url": ""
+    }
+}

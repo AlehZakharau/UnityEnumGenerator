@@ -8,10 +8,20 @@ namespace UnityEditor.Generator
     public static class GeneratorEnum
     {
         private static readonly List<string> _logs = new();
+        /// <summary>
+        /// Method generates a new enum file and recompile the Unity3d editor.
+        /// </summary>
+        /// <param name="generatorEnumSettings">setting: enumType and directory path</param>
+        /// <param name="enumInstances">enumNames</param>
         public static void GenerateEnum(GeneratorEnumSettings generatorEnumSettings, string[] enumInstances)
         {
             GenerateEnumFile(generatorEnumSettings, enumInstances);
         }
+        /// <summary>
+        /// Method generates a new enum file and recompile the Unity3d editor.
+        /// </summary>
+        /// <param name="generatorEnumSettings">setting: enumType and directory path</param>
+        /// <param name="enumInstances">enumNames</param>
         public static void GenerateEnum(GeneratorEnumSettings generatorEnumSettings, List<string> enumInstances)
         {
             GenerateEnumFile(generatorEnumSettings, enumInstances.ToArray());
@@ -20,7 +30,7 @@ namespace UnityEditor.Generator
         private static void GenerateEnumFile(GeneratorEnumSettings generatorEnumSettings, string[] enumInstances)
         {
             var name = generatorEnumSettings.EnumName;
-            var filePathAndName = $"{generatorEnumSettings.FilePath}/{generatorEnumSettings.EnumName}.cs";
+            var filePathAndName = $"{generatorEnumSettings.DirectoryPath}/{generatorEnumSettings.EnumName}.cs";
             var nameSpace = generatorEnumSettings.NameSpace;
             var hasNameSpace = !string.IsNullOrEmpty(nameSpace);
             
